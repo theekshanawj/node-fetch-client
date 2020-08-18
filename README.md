@@ -57,7 +57,10 @@ const result = api.get('http://localhost:3000', configs);
 
 `api.(get|post|put|patch|delete|head|options|download*)`
 
-*Special method - `download` : This method can be used to handle binary data in a response
+*Special method - `download` : This method can be used to handle binary data in a response.
+
+Default Http method of `download` is `POST` but this can be changed by passing `method` to `configs` object.
+
 
 #### CommonConfig and configs
 
@@ -85,13 +88,21 @@ const configs = {
     headers: {
        'content-type': 'application/json',
        'user-agent': 'api-caller',
-        accept': 'application/json'
+        'accept': 'application/json'
      },
      timeout: 50000, // precedence given to configs
 }
 ```
 
+#### Timeout
+
+`10s` default timeout is provided. `timeout` can be passed `commonConfigs` or `configs` objects as required.
 
 
+#### Limitations
 
+As described earlier support is given to `Json` and `binary` formats only. Further `result` from API calls will be the 
+`Json` or `binary` content only.
+
+If the raw `response`object required, this API can be extended.
 
