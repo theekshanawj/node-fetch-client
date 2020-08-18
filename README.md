@@ -43,16 +43,19 @@ const api = APIClient(commonConfigs);
 Call the relevant Http method with the `url` and specific configs.
 
 ```javascript
-api.get('http://localhost:3000', configs);
+const result = api.get('http://localhost:3000', configs);
 ```
 `configs :` Any allowed configs to node-fetch API. These are method and API call relevant specific configs.
 
+####
+
+`result` will the `json` response from the API call.
 
 #### Allowed Http method
 
 `GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS`
 
-`api.(get|post|put|patch|delete|head|options|downlaod*)`
+`api.(get|post|put|patch|delete|head|options|download*)`
 
 *Special method - `download` : This method can be used to handle binary data in a response
 
