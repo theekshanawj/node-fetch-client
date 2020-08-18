@@ -1,0 +1,22 @@
+{
+  "name": "node-fetch-client",
+  "version": "1.0.0",
+  "description": "NodeJS Fetch client wrapping node-fetch",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "NodeJS",
+    "Node-Fetch",
+    "Api-client",
+    "Fetch"
+  ],
+  "author": "Theekshana Wijesinghe",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^26.4.0",
+    "js-merge-object": "^1.0.1",
+    "node-fetch": "^2.6.0"
+  }
+}
