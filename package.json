@@ -18,5 +18,9 @@
     "jest": "^26.4.0",
     "js-merge-object": "^1.0.1",
     "node-fetch": "^2.6.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/theekshanawj/node-fetch-client.git"
   }
 }
